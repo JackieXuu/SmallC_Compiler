@@ -1,0 +1,36 @@
+SmallC Compiler for CS215 Compiler Design Project
+
+Student Name: Zhengtian Xu
+Student ID: 5140309178
+
+SUBMITTED FILES:
+	- README				| README file.
+	- input.s 				| input file for SmallC Compiler.
+	- makefile				| makefile.
+	- smallc.l				| The lexical analyzer using flex.
+	- smallc.y				| The syntax analyzer using Yacc.
+	- semanticAnalysis.h	| Check the semantic error of source code.
+	- quadruple.h			| Define some functions to create three-address code.
+	- intermediateCode.h	| Define some functions to translate the source to intermediate code.
+	- optimization.h		| Do some optimizations to eliminate the dead code and operations 
+							  for register allocation.
+	- codeGeneration.h		| Translate intermediate code to MIPS code.
+	- include
+		- header.h			| Include some necessary files and the definition of quadruple.
+		- treeNode.h 		| The definition of abstract syntax tree.
+		- symbolTable.h 	| The definition of symbol table.
+	- 5140309178-report		| Report for SmallC Compiler.
+
+EXECUTION:
+	1. Enter the folder and using the shell command 'make'.
+	2. Then you will get a executable file 'scc'.
+	   - scc
+	   		- ./scc inputFileName outputFileName
+	     		The compiler will read in inputFileName. MIPS codes are written to outputFileName.
+	   		- ./scc inputFileName
+	     		The compiler will read in inputFileName. Intermediate codes are written to InterCode, while MIPS codes are written to MIPSCode.s.
+
+TEST ENVIRONMENT:
+	- Ubuntu 16.04 LTS
+
+
